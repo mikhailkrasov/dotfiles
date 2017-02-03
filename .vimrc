@@ -13,6 +13,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'distinguished'
+let g:tmuxline_powerline_separators = 0
 Plugin 'imkmf/ctrlp-branches'
 Plugin 'gmarik/vundle'
 Plugin 'scrooloose/nerdtree'
@@ -64,6 +65,8 @@ set wildmenu "варианты автодополнения командной �
 set hlsearch "подсветка поискового результата.
 set noswapfile "не использовать своп-файл.
 set nobackup "сохранение резервных копий.
+set paste
+
 hi Normal ctermbg=none
 autocmd BufWinLeave *.* mkview "при закрытии файла сохранить вид.
 autocmd BufWinEnter *.* silent loadview "при открытии файла восстановить сохраненный вид.
