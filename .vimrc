@@ -27,13 +27,12 @@ let g:NERDTreeIndicatorMapCustom = {
 	\ "Unknown"   : "?"
 	\ }
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'jpalardy/vim-slime'
-let g:slime_target = "tmux"
-au BufRead,BufNewFile *.liq set filetype=ruby
+Bundle 'mcfiredrill/vim-liquidsoap'
+au BufRead,BufNewFile *.liq set filetype=liquidsoap
 call vundle#end()
 syntax on "подсветка синтаксиса.
 colorscheme molokai
-set guifont=Anonymous\ Pro\ for\ Powerline:h12
+set guifont=Droid\ Sans\ Mono\ Dotted\ for\ Powerline:h11
 set nowrap "отказ переноса длинных строк.
 set encoding=utf-8
 set termencoding=utf-8 "кодировка текста по умолчанию.
